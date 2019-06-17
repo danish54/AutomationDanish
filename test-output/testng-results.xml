@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="61534" started-at="2019-06-17T09:44:35Z" finished-at="2019-06-17T09:45:36Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="61534" started-at="2019-06-17T09:44:35Z" finished-at="2019-06-17T09:45:36Z">
+      <class name="Rough.TestCaseRough">
+        <test-method status="PASS" signature="login()[pri:0, instance:Rough.TestCaseRough@c39f790]" name="login" duration-ms="61523" started-at="2019-06-17T15:14:35Z" finished-at="2019-06-17T15:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- Rough.TestCaseRough -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
