@@ -5,7 +5,9 @@
     <classes>
       <class name="Rough.TestCaseRough">
         <methods>
-          <include name="login"/>
+          <include name="openapp"/>
+          <include name="operation"/>
+          <include name="closeapp"/>
         </methods>
       </class> <!-- Rough.TestCaseRough -->
     </classes>
