@@ -10,11 +10,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.server.handler.GetScreenOrientation;
 
 public class BaseClassRough {
 
@@ -41,8 +39,10 @@ public class BaseClassRough {
 		// launching browser
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(config.getProperty("baseurl"));
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
+		
 
 	}
 
@@ -51,6 +51,8 @@ public class BaseClassRough {
 		BaseClassRough base = new BaseClassRough();
 
 		base.Setup();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.get(config.getProperty("baseurl"));
 		driver.findElement(By.id(OR.getProperty("username_id"))).sendKeys(config.getProperty("username"));
 		driver.findElement(By.id(OR.getProperty("password_id"))).sendKeys(config.getProperty("password"));
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -67,13 +69,6 @@ public class BaseClassRough {
 	}
 
 	
-	public void dddsssss() throws IOException{
-		Date dd= new Date();
-		SimpleDateFormat sdff = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
-		File ssfile =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(ssfile, new File("E:\\eclipse-jee-neon-3-win32-x86_64\\New folder\\Automation\\src\\excel\\" + sdff.format(dd) + ".jpg"));
-		
-	}
 	public void Close() {
 
 		driver.quit();
