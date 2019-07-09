@@ -376,6 +376,7 @@ public class Xls_Reader {
 			sheet = workbook.getSheet(sheetName);
 			XSSFCellStyle style = workbook.createCellStyle();
 			style.setFillForegroundColor(HSSFColor.GREY_40_PERCENT.index);
+			@SuppressWarnings("unused")
 			XSSFCreationHelper createHelper = workbook.getCreationHelper();
 			style.setFillPattern(HSSFCellStyle.NO_FILL);
 
@@ -467,6 +468,7 @@ public class Xls_Reader {
 	public static void main(String arg[]) throws IOException {
 
 		// System.out.println(filename);
+		@SuppressWarnings("unused")
 		Xls_Reader datatable = null;
 
 		/*
