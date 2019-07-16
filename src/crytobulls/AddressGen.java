@@ -14,7 +14,7 @@ public class AddressGen {
 	
 	public static WebDriver driver;
 
-	
+	@Test (priority=1)
 	public void openbrowser() throws InterruptedException{
 	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Danish\\Downloads\\chromedriver_win32\\chromedriver.exe");
 	driver = new ChromeDriver();

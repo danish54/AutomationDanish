@@ -18,11 +18,9 @@ public class Newmultiplelogin {
 
 	public static WebDriver driver;
 	Xls_Reader reader;
-	
-
 
 	@Test(dataProvider = "getData")
-	public  void DataDrivenFrameEx(String username1, String password1) throws InterruptedException, IOException
+	public void DataDrivenFrameEx(String username1, String password1) throws InterruptedException, IOException
 
 	{
 
@@ -41,7 +39,7 @@ public class Newmultiplelogin {
 		driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys(password1);
 
 		driver.findElement(By.xpath("//input[@id='btnLogin']")).click();
-		
+
 		Thread.sleep(2000);
 		Assert.assertEquals("https://opensource-demo.orangehrmlive.com/index.php/dashboard", driver.getCurrentUrl());
 		driver.close();
@@ -49,31 +47,31 @@ public class Newmultiplelogin {
 
 	@DataProvider
 	public Object[][] getData() {
-		
-		reader = new Xls_Reader("E:\\eclipse-jee-neon-3-win32-x86_64\\New folder\\Automation\\src\\excel\\logindatasheet.xlsx");
-	
-		//get row count in sheet
-		int rowcount =reader.getRowCount("Newmultiplelogin");
-		System.out.println("Row Count is "+rowcount);
-		int colcount =reader.getColumnCount("Newmultiplelogin");
-		System.out.println("Column Count is "+colcount);
-		
-		//object array
-		Object[][] data = new Object[rowcount - 1][colcount];
-		
-		for (int rownum = 2; rownum <= rowcount ; rownum++) {
-			
-			data[rownum-2][0] = reader.getCellData("Newmultiplelogin", "username", rownum);
-			System.out.println(data[rownum-2][0]);
 
-			data[rownum-2][1] = reader.getCellData("Newmultiplelogin", "password", rownum);
-			System.out.println(data[rownum-2][1]);
-			
+		reader = new Xls_Reader(
+				"E:\\eclipse-jee-neon-3-win32-x86_64\\New folder\\Automation\\src\\excel\\logindatasheet.xlsx");
+
+		// get row count in sheet
+		int rowcount = reader.getRowCount("Newmultiplelogin");
+		System.out.println("Row Count is " + rowcount);
+		int colcount = reader.getColumnCount("Newmultiplelogin");
+		System.out.println("Column Count is " + colcount);
+
+		// object array
+		Object[][] data = new Object[rowcount - 1][colcount];
+
+		for (int rownum = 2; rownum <= rowcount; rownum++) {
+
+			data[rownum - 2][0] = reader.getCellData("Newmultiplelogin", "username", rownum);
+			System.out.println(data[rownum - 2][0]);
+
+			data[rownum - 2][1] = reader.getCellData("Newmultiplelogin", "password", rownum);
+			System.out.println(data[rownum - 2][1]);
+
 		}
 		return data;
 	}
 
-	
 	@AfterMethod
 
 	public void closeapp()
