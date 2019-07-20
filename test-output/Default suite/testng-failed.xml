@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="crytobulls.AddressGen">
+      <class name="crytobulls.Homedata2raju">
         <methods>
-          <include name="deposit"/>
-          <include name="login"/>
+          <include name="closeapp"/>
+          <include name="openapp"/>
+          <include name="operation"/>
         </methods>
-      </class> <!-- crytobulls.AddressGen -->
+      </class> <!-- crytobulls.Homedata2raju -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

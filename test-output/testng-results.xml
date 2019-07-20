@@ -2,16 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2152" started-at="2019-07-16T10:54:18Z" finished-at="2019-07-16T10:54:20Z">
+  <suite name="Default suite" duration-ms="120782" started-at="2019-07-19T11:38:19Z" finished-at="2019-07-19T11:40:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2152" started-at="2019-07-16T10:54:18Z" finished-at="2019-07-16T10:54:20Z">
-      <class name="restapi.SimpleGetTest">
-        <test-method status="PASS" signature="GetWeatherDetails()[pri:0, instance:restapi.SimpleGetTest@19bb089b]" name="GetWeatherDetails" duration-ms="2141" started-at="2019-07-16T16:24:18Z" finished-at="2019-07-16T16:24:20Z">
+    <test name="Default test" duration-ms="120782" started-at="2019-07-19T11:38:19Z" finished-at="2019-07-19T11:40:20Z">
+      <class name="crytobulls.HomeDataDani">
+        <test-method status="PASS" signature="openapp()[pri:0, instance:crytobulls.HomeDataDani@5a39699c]" name="openapp" is-config="true" duration-ms="38990" started-at="2019-07-19T17:08:19Z" finished-at="2019-07-19T17:08:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetWeatherDetails -->
-      </class> <!-- restapi.SimpleGetTest -->
+        </test-method> <!-- openapp -->
+        <test-method status="PASS" signature="operation()[pri:0, instance:crytobulls.HomeDataDani@5a39699c]" name="operation" duration-ms="81782" started-at="2019-07-19T17:08:58Z" finished-at="2019-07-19T17:10:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- operation -->
+      </class> <!-- crytobulls.HomeDataDani -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
