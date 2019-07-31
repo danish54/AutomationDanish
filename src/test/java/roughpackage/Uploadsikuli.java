@@ -15,8 +15,8 @@ public class Uploadsikuli {
 	public void uploadfile() throws FindFailed {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Danish\\Downloads\\chromedriver_win32\\chromedriver.exe");
-        String filepath = "E:\\eclipse-jee-2018-12-R-win32-x86_64\\eclipse\\workspace\\DanishMaven\\sikuli\\";
-        String inputFilePath = "E:\\eclipse-jee-2018-12-R-win32-x86_64\\eclipse\\workspace\\DanishMaven\\excel\\";
+        String filepath = "E:\\eclipse-jee-2018-12-R-win32-x86_64\\eclipse\\workspace\\DanishMaven\\src\\test\\resources\\Sikuli data\\";
+        String inputFilePath = "E:\\eclipse-jee-2018-12-R-win32-x86_64\\eclipse\\workspace\\DanishMaven\\src\\test\\resources\\Excel\\";
         
         Screen s = new Screen();
         Pattern fileInputTextBox = new Pattern(filepath + "fileinput_img1.PNG");
