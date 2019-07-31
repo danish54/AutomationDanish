@@ -10,7 +10,8 @@ import org.openqa.selenium.TakesScreenshot;
 
 import Rough.BaseClassRough;
 
-public class TestUtil extends BaseClassRough {
+public class TestUtil extends BaseClassRough 
+{
 	
 	public static void capturescreenshot() throws IOException{
 		Date d = new Date();

@@ -1,20 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="120782" started-at="2019-07-19T11:38:19Z" finished-at="2019-07-19T11:40:20Z">
+  <suite name="Default suite" duration-ms="30375" started-at="2019-07-20T12:22:33Z" finished-at="2019-07-20T12:23:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="120782" started-at="2019-07-19T11:38:19Z" finished-at="2019-07-19T11:40:20Z">
+    <test name="Default test" duration-ms="30375" started-at="2019-07-20T12:22:33Z" finished-at="2019-07-20T12:23:03Z">
       <class name="crytobulls.HomeDataDani">
-        <test-method status="PASS" signature="openapp()[pri:0, instance:crytobulls.HomeDataDani@5a39699c]" name="openapp" is-config="true" duration-ms="38990" started-at="2019-07-19T17:08:19Z" finished-at="2019-07-19T17:08:58Z">
+        <test-method status="PASS" signature="openapp()[pri:0, instance:crytobulls.HomeDataDani@3cb5cdba]" name="openapp" is-config="true" duration-ms="16840" started-at="2019-07-20T17:52:33Z" finished-at="2019-07-20T17:52:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method status="PASS" signature="operation()[pri:0, instance:crytobulls.HomeDataDani@5a39699c]" name="operation" duration-ms="81782" started-at="2019-07-19T17:08:58Z" finished-at="2019-07-19T17:10:20Z">
+        <test-method status="FAIL" signature="operation()[pri:0, instance:crytobulls.HomeDataDani@3cb5cdba]" name="operation" duration-ms="11205" started-at="2019-07-20T17:52:50Z" finished-at="2019-07-20T17:53:01Z">
+          <exception class="org.apache.xmlbeans.impl.values.XmlValueDisconnectedException">
+            <full-stacktrace>
+              <![CDATA[org.apache.xmlbeans.impl.values.XmlValueDisconnectedException
+	at org.apache.xmlbeans.impl.values.XmlObjectBase.check_orphaned(XmlObjectBase.java:1213)
+	at org.apache.xmlbeans.impl.values.XmlObjectBase.newCursor(XmlObjectBase.java:243)
+	at org.apache.xmlbeans.impl.values.XmlComplexContentImpl.arraySetterHelper(XmlComplexContentImpl.java:1073)
+	at org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTFontsImpl.setFontArray(Unknown Source)
+	at org.apache.poi.xssf.model.StylesTable.writeTo(StylesTable.java:319)
+	at org.apache.poi.xssf.model.StylesTable.commit(StylesTable.java:377)
+	at org.apache.poi.POIXMLDocumentPart.onSave(POIXMLDocumentPart.java:177)
+	at org.apache.poi.POIXMLDocumentPart.onSave(POIXMLDocumentPart.java:181)
+	at org.apache.poi.POIXMLDocument.write(POIXMLDocument.java:214)
+	at crytobulls.HomeDataDani.operation(HomeDataDani.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.xmlbeans.impl.values.XmlValueDisconnectedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- operation -->
+        <test-method status="PASS" signature="closeapp()[pri:0, instance:crytobulls.HomeDataDani@3cb5cdba]" name="closeapp" is-config="true" duration-ms="2321" started-at="2019-07-20T17:53:01Z" finished-at="2019-07-20T17:53:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeapp -->
       </class> <!-- crytobulls.HomeDataDani -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

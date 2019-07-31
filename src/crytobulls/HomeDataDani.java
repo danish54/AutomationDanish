@@ -10,10 +10,10 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -51,14 +51,22 @@ public class HomeDataDani
 	public void operation() throws InterruptedException, IOException
 
 	{
+		File fso = new File(path1);
 
+		FileInputStream fis = new FileInputStream(fso);
+
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+
+		XSSFSheet s = wb.getSheet("Sheet1");
+
+		
 		WebElement element = driver.findElement(By.xpath("//tbody[@id='viewpair']"));
 
 		java.util.List<WebElement> countrow = element.findElements(By.tagName("tr"));
 
 		System.out.println(countrow.size());
 
-		for (int i = 50; i < countrow.size(); i++)
+		for (int i = 53; i < countrow.size(); i++)
 
 		{
 
@@ -67,36 +75,39 @@ public class HomeDataDani
 			String s2 = "]/td[";
 
 			String s3 = "]";
+			//Object[][] data = new Object[rowcount - 1][colcount];
 
 			for (int j = 4; j <= 8; j++)
 
 			{
-				JavascriptExecutor jse = (JavascriptExecutor) driver;
-				jse.executeScript("window.scrollBy(0,400)");
 
 				text = driver.findElement(By.xpath(s1 + i + s2 + j + s3)).getText();
 
 				System.out.println(text);
-				System.out.println("========================================================");
+				
 
-				File fso = new File(path1);
-
-				FileInputStream fis = new FileInputStream(fso);
-
-				XSSFWorkbook wb = new XSSFWorkbook(fis);
-
-				XSSFSheet s = wb.getSheet("Sheet1");
-
-				Row r = s.createRow(i);
+				Row r = s.createRow(i-53);
 
 				r.createCell(j-4).setCellValue(text);
-
-				Thread.sleep(3000);
 
 				FileOutputStream fo = new FileOutputStream(path1);
 
 				wb.write(fo);
 
 				fo.close();
+				Thread.sleep(6000);
 }
-}}}
+			
+			
+}
+		}
+	@AfterTest
+
+	public void closeapp()
+
+	{
+
+		driver.close();
+
+	}
+	}
