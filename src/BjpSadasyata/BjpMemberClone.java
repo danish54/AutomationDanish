@@ -244,6 +244,7 @@ private void waitUnitlSelectOptionsPopulated(org.openqa.selenium.support.ui.Sele
 public void closeapp()
 {
 	driver.quit();
+	System.out.println("All Data Uploaded");
 	}
 
 

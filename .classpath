@@ -40,5 +40,7 @@
 	<classpathentry kind="lib" path="C:/Users/Danish/Downloads/Compressed/rest-assured-4.0.0-dist/rest-assured-4.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Danish/Downloads/Compressed/XlsReader-0.1.1/library/XlsReader.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Danish/Downloads/Compressed/XlsReader-0.1.1/library/poi-3.7-20101029.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Danish/Downloads/Compressed/XlsReader-0.1.1/library/poi-scratchpad-3.7-20101029.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Danish/Downloads/Xls_Reader1.java"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
