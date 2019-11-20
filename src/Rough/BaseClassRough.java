@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.ByXPath;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -67,6 +68,22 @@ public class BaseClassRough {
 		FileUtils.copyFile(ssFile, new File(
 				"E:\\eclipse-jee-neon-3-win32-x86_64\\New folder\\Automation\\src\\excel\\" + sdf.format(d) + ".jpg"));
 	}
+
+	public void clickbyxpath(String xpath) {
+		
+		driver.findElement(By.xpath(xpath)).click();;
+		//BaseClassRough xp = new BaseClassRough();
+		//xp.clickbyxpath("click_xpath");
+	}
+	
+public void sendbyxpath(String xpath, String value) {
+		
+		driver.findElement(By.xpath(xpath)).sendKeys(value);
+		//BaseClassRough xp = new BaseClassRough();
+		//xp.sendbyxpath("send_xpath", "value");
+	}
+	
+	
 
 	
 	public void Close() {
