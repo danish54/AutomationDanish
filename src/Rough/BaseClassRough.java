@@ -83,6 +83,30 @@ public void sendbyxpath(String xpath, String value) {
 		//xp.sendbyxpath("send_xpath", "value");
 	}
 	
+
+public  boolean isElementPresent(WebDriver driver,By by)  
+ {  
+    driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);  
+    try  
+    {  
+       driver.findElement(by);  
+       return true;  
+    }  
+    
+    catch(Exception e)  
+    
+    {  
+    	
+       return false;  
+    }  
+    
+    finally  
+    {  
+    	
+       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);  
+     }  
+ }  
+
 	
 
 	
