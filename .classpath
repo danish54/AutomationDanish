@@ -54,7 +54,6 @@
 	<classpathentry kind="lib" path="Resources/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="Resources/XlsReader-0.1.1/library/XlsReader.jar"/>
 	<classpathentry kind="lib" path="Resources/sikulixapi-2.0.3.jar"/>
-	<classpathentry kind="lib" path="Resources/javax.mail.jar"/>
 	<classpathentry kind="lib" path="Resources/javax.mail-api/dsn-1.6.2.jar"/>
 	<classpathentry kind="lib" path="Resources/javax.mail-api/gimap-1.6.2.jar"/>
 	<classpathentry kind="lib" path="Resources/javax.mail-api/imap-1.6.2.jar"/>
@@ -64,5 +63,6 @@
 	<classpathentry kind="lib" path="Resources/javax.mail-api/mailapi-1.6.2.jar"/>
 	<classpathentry kind="lib" path="Resources/javax.mail-api/pop3-1.6.2.jar"/>
 	<classpathentry kind="lib" path="Resources/javax.mail-api/smtp-1.6.2.jar"/>
+	<classpathentry kind="lib" path="Resources/javax.mail-api/activation-1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

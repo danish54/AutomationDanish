@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="automation.Childclass"/>
+      <class name="Rough.Newmultiplelogin"/>
+      <class name="Rough.sikulidemoo"/>
+      <class name="Rough.TestCaseRough"/>
+      <class name="crytobulls.loop"/>
+      <class name="Rough.MultipleLogin"/>
+      <class name="BjpSadasyata.BjpMemberClone"/>
+      <class name="BjpSadasyata.bjp2"/>
       <class name="Rough.operabroww"/>
+      <class name="Rough.DemoWindowAlert"/>
+      <class name="Rough.Dropdowncount"/>
+      <class name="restapi.SimpleGetTest"/>
+      <class name="crytobulls.Assert11"/>
+      <class name="packagesecond.Chromebrowseropen"/>
+      <class name="crytobulls.AddressGen"/>
+      <class name="crytobulls.HomeDataDani"/>
+      <class name="Rough.uploadfilesikuli"/>
+      <class name="automation.Secondchildclass"/>
+      <class name="Rough.test2"/>
+      <class name="Rough.screenshot"/>
+      <class name="crytobulls.HomePageData"/>
+      <class name="Rough.BaseClassRough"/>
+      <class name="BjpSadasyata.BJPSadasyata"/>
+      <class name="crytobulls.Homedata2raju"/>
+      <class name="Rough.Dataproviderclass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

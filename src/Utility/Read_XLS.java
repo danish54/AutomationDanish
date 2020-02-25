@@ -1,4 +1,4 @@
-package com.stta.utility;
+package Utility;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
