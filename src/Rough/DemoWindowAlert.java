@@ -4,17 +4,17 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 public class DemoWindowAlert {
 	WebDriver driver;
 
-	@Before
+	@BeforeTest
 
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver",
@@ -77,7 +77,7 @@ public class DemoWindowAlert {
 		Thread.sleep(2000);
 	}
 
-	@After
+	@AfterTest
 	public void tearDown() {
 		driver.quit();
 	}
