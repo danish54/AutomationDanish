@@ -24,7 +24,7 @@ public class bjp2
 @BeforeTest
 public void openapp()
 { 
- System.setProperty("webdriver.chrome.driver","E:\\jar file\\chromedriver.exe");
+ System.setProperty("webdriver.chrome.driver","C:\\Users\\ACER.NITRO 5\\git\\Old Code\\AutomationDanish\\Resources\\chromedriver_win32\\chromedriver.exe");
  driver=new ChromeDriver();
  driver.get("https://voiceey.com/sadasytaparvoffline/enters/login");
  driver.manage().window().maximize();
